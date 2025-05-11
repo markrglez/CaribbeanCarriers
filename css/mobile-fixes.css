@@ -1,0 +1,128 @@
+/* Mobile responsiveness fixes */
+
+/* General mobile adjustments */
+@media (max-width: 768px) {
+  /* Adjust section padding */
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Adjust section titles */
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hero section adjustments */
+  #hero {
+    height: 70vh;
+    min-height: 450px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .hero-card {
+    max-width: 90%;
+    padding: 1.8rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .hero-card h1 {
+    font-size: 1.6rem;
+  }
+
+  /* How steps adjustments */
+  .how-list {
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
+
+  .how-step {
+    padding: 1.2rem 1.2rem 1.2rem 2.5rem;
+  }
+
+  .how-step::before {
+    left: -1rem;
+  }
+
+  .how-step h4 {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .how-step h4 i {
+    font-size: 1.2rem;
+    margin-right: 0.4rem;
+  }
+
+  /* Products grid adjustments */
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Form adjustments */
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Mission statement */
+  .mission-statement {
+    padding: 1.5rem;
+  }
+
+  /* Blog section */
+  .blog-img {
+    height: 200px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .hero-card h1 {
+    font-size: 1.4rem;
+  }
+
+  .btn-pill {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .how-step {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  /* Fix button groups */
+  .d-flex.gap-3 {
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+
+  .d-flex.gap-3 .btn {
+    width: 100%;
+  }
+}
+
+/* Fix navbar on mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: var(--navy);
+    padding: 1rem;
+    border-radius: 0 0 var(--radius) var(--radius);
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav {
+    gap: 0 !important;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+}

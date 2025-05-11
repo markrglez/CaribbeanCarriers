@@ -1,0 +1,43 @@
+/* Language Toggle Styles */
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  background-color: var(--navy);
+  border-radius: 30px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.language-toggle button {
+  background: none;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  transition: var(--transition);
+}
+
+.language-toggle button.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.language-toggle button:hover:not(.active) {
+  background-color: var(--navy-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-toggle {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
